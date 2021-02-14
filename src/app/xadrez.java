@@ -2,12 +2,13 @@ package app;
 
 import tabuleiro.BordaDoTabuleiro;
 import tabuleiro.Posicao;
+import xadrez.PartidaDoXadrez;
 
 public class xadrez {
 
     public static void main(String[] args) {
 
-        BordaDoTabuleiro borda = new BordaDoTabuleiro(8,8);
-
+        PartidaDoXadrez partida = new PartidaDoXadrez();
+        Ui.printBorda(partida.getPecas());
     }
 }

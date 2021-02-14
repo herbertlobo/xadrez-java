@@ -28,4 +28,13 @@ public class BordaDoTabuleiro {
     public void setCol(int col) {
         this.col = col;
     }
+    //metodos
+    // uma peça recebe uma linha e coluna
+    public PecaDeTabuleiro peca(int linha, int coluna){
+        return pecas[linha][coluna];
+    }
+    // uma peça recebe uma posição
+    public PecaDeTabuleiro peca(Posicao posicao){
+        return pecas[posicao.getLin()][posicao.getCol()];
+    }
 }
